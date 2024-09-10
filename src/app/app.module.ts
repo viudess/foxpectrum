@@ -29,10 +29,13 @@ import { NavbarComponent } from './components-gerais/navbar/navbar.component';
 import { BotaoDeCriseComponent } from './components-gerais/botao-de-crise/botao-de-crise.component';
 import { BannerComponent } from './components-gerais/banner/banner.component';
 
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MatIconModule } from '@angular/material/icon';
+
 @NgModule({
   declarations: [
     AppComponent,
-    
+
     SplashPageComponent,
     CadastroComponent,
     LoginComponent,
@@ -60,9 +63,12 @@ import { BannerComponent } from './components-gerais/banner/banner.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatIconModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
