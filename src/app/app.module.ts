@@ -28,12 +28,17 @@ import { MedFichaComponent } from './tipico/personalizacao/med-ficha/med-ficha.c
 import { NavbarComponent } from './components-gerais/navbar/navbar.component';
 import { BotaoDeCriseComponent } from './components-gerais/botao-de-crise/botao-de-crise.component';
 import { BannerComponent } from './components-gerais/banner/banner.component';
+import { ToDoComponent } from './components-gerais/to-do/to-do.component';
+import { CalendarioComponent } from './components-gerais/calendario/calendario.component';
 
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ToDoComponent } from './components-gerais/to-do/to-do.component';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatCardModule } from '@angular/material/card';
+
 
 
 @NgModule({
@@ -63,14 +68,18 @@ import { ToDoComponent } from './components-gerais/to-do/to-do.component';
     NavbarComponent,
     BotaoDeCriseComponent,
     BannerComponent,
-    ToDoComponent
+    ToDoComponent,
+    CalendarioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
     MatCheckboxModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatNativeDateModule,
+    MatDatepickerModule,
+    MatCardModule
   ],
   providers: [
     provideAnimationsAsync()
