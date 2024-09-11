@@ -7,10 +7,5 @@ nav{
   align-items: center;
   position: fixed;
   bottom: 0;
-  
-}
-mat-icon{
-  color: #F0F0F0;
-  font-size: 35px;
-  overflow: visible;
+
 }
