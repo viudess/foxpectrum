@@ -31,11 +31,14 @@ import { BannerComponent } from './components-gerais/banner/banner.component';
 
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatIconModule } from '@angular/material/icon';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToDoComponent } from './components-gerais/to-do/to-do.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-
     SplashPageComponent,
     CadastroComponent,
     LoginComponent,
@@ -59,12 +62,15 @@ import { MatIconModule } from '@angular/material/icon';
     MedFichaComponent,
     NavbarComponent,
     BotaoDeCriseComponent,
-    BannerComponent
+    BannerComponent,
+    ToDoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatIconModule
+    MatIconModule,
+    MatCheckboxModule,
+    BrowserAnimationsModule
   ],
   providers: [
     provideAnimationsAsync()
