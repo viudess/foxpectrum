@@ -18,7 +18,6 @@ input[type="checkbox"]{
   width: 25px;
   height: 25px;
   accent-color: #704D97;
-  transition: none;
 }
 .tarefa{
   display: flex;

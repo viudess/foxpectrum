@@ -1,6 +1,7 @@
 .sentimentos h1{
   padding-left: 20px;
   margin-top: 10px;
+  font-size: large;
 }
 .block45{
   background-color: #D6C8E1;
@@ -38,12 +39,49 @@ section{
   gap: 20px;
 }
 input{
-  overflow: hidden;
   width: 90%;
+  height: 40px;
   border-bottom: 2px solid #704D97;
+  background-color: #F0F0F0;
+  padding: 10px;
 }
 .gridinput{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.check{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+.check input{
+  width: 20px;
+  height: 20px;
+  accent-color: #704D97;
+}
+.check label{
+  font-size: large;
+  padding-left: 10px;
+}
+.check div{
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.finalizar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+.finalizar button{
+  background-color: #D6C8E1;
+  width: 90%;
+  height: 55px;
+  border-radius: 10px;
+}
+form h1{
+  padding-top: 20px;
 }

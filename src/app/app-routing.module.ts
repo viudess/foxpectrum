@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: '', component: HomeTipicoComponent },
   { path: 'mood', component: MoodTrackerComponent },
   { path: 'organizacao', component: CalendarioToDoComponent },
-  { path: 'personalizacao', component: PerfilComponent },
+  { path: 'perfil', component: PerfilComponent },
   { path: 'formsmood', component: FormsMoodComponent },
 ];
 
