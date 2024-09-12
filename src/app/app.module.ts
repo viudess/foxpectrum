@@ -38,6 +38,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatCardModule } from '@angular/material/card';
+import { EmotionComponent } from './components-gerais/emotion/emotion.component';
 
 
 
@@ -69,7 +70,8 @@ import { MatCardModule } from '@angular/material/card';
     BotaoDeCriseComponent,
     BannerComponent,
     ToDoComponent,
-    CalendarioComponent
+    CalendarioComponent,
+    EmotionComponent
   ],
   imports: [
     BrowserModule,

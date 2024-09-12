@@ -1,3 +1,4 @@
+import { FormsMoodComponent } from './tipico/mood/forms-mood/forms-mood.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -6,11 +7,13 @@ import { CalendarioToDoComponent } from './tipico/organizacao/calendario-to-do/c
 import { PerfilComponent } from './tipico/personalizacao/perfil/perfil.component';
 import { HomeTipicoComponent } from './tipico/home-tipico/home-tipico.component';
 
+
 const routes: Routes = [
   { path: '', component: HomeTipicoComponent },
   { path: 'mood', component: MoodTrackerComponent },
   { path: 'organizacao', component: CalendarioToDoComponent },
   { path: 'personalizacao', component: PerfilComponent },
+  { path: 'formsmood', component: FormsMoodComponent },
 ];
 
 @NgModule({
