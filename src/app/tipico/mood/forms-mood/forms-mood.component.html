@@ -29,27 +29,9 @@
     <h1>Como você está se sentindo?</h1>
     <section>
       <div class="gridblock-normal">
-        <app-emotion></app-emotion>
-        <app-emotion></app-emotion>
-        <app-emotion></app-emotion>
-        <app-emotion></app-emotion>
-        <app-emotion></app-emotion>
-        <app-emotion></app-emotion>
-        <app-emotion></app-emotion>
-        <app-emotion></app-emotion>
-        <app-emotion></app-emotion>
-        <app-emotion></app-emotion>
-        <app-emotion></app-emotion>
-        <app-emotion></app-emotion>
-        <app-emotion></app-emotion>
-        <app-emotion></app-emotion>
-        <app-emotion></app-emotion>
-        <app-emotion></app-emotion>
-        <app-emotion></app-emotion>
-        <app-emotion></app-emotion>
-        <app-emotion></app-emotion>
-        <app-emotion></app-emotion>
-        <app-emotion></app-emotion>
+        <div *ngFor="let emotion of emotions">
+          <app-emotion [title]="emotion.title" [image]="emotion.image"></app-emotion>
+        </div>
       </div>
     </section>
     <form>
@@ -97,6 +79,5 @@
 
   </div>
 </main>
-
 
 

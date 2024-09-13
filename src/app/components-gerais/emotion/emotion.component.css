@@ -1,4 +1,4 @@
-.block-normal{
+.emotion{
   width: 85px;
   height: 85px;
   border-radius: 10px;
@@ -6,4 +6,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: inline-block;
+}
+p{
+  display: inline-block;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  font-size: small;
+  margin-top: 5px;
 }
