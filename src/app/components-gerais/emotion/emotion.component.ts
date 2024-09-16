@@ -8,4 +8,9 @@ import { Component, Input } from '@angular/core';
 export class EmotionComponent {
   @Input() title!: string;
   @Input() image!: string;
+  clicado = false;
+
+  mudarCor(){
+    this.clicado = !this.clicado;
+  }
 }
