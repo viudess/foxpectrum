@@ -20,7 +20,7 @@ h1{
   font-weight: bold;
   width: 50%;
 }
-button{
+a{
   background-color: #F0F0F0;
   width: 125px;
   height: 35px;
@@ -28,6 +28,9 @@ button{
   color: #876E9B;
   margin-bottom: 20px;
   font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 img{
   width: 125px;

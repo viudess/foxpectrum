@@ -1,0 +1,71 @@
+section{
+  width: 100%;
+  height: 100px;
+  background-color: #D6C8E1;
+  margin-top: -20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+section img{
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+}
+.imagePerfil{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.neurotipo{
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  border-top-right-radius: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.align-neurotipo{
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+.neurotipo h1, p{
+  margin-left: 5%;
+}
+.neurotipo p{
+  font-size: small;
+  color: gray;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.familia{
+  background-color: #876E9B;
+  width: 90%;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.familia h1{
+  padding-left: 5%;
+}
+.familia img{
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+}
+.familia div{
+  padding-right: 5%;
+  display: flex;
+  flex-direction: row;
+}
