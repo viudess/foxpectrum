@@ -27,18 +27,24 @@ input{
   align-items: center;
 }
 .check{
-  display: flex;
-  flex-direction: column;
-  padding-left: 20px;
+  margin-top: 10px;
 }
-.check h1{
+.gridcheck{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+.check h2{
   font-size: large;
   padding-left: 10px;
 }
-.check div{
-  display: flex;
-  align-items: center;
-  margin-top: 5px;
+.radio{
+  width: 20px;
+  height: 20px;
+  border: 2px solid #D6C8E1;
+  border-radius: 5px;
 }
 .finalizar{
   display: flex;
@@ -55,10 +61,4 @@ input{
 }
 form h1{
   padding-top: 20px;
-}
-.radio{
-  width: 20px;
-  height: 20px;
-  border: 2px solid #D6C8E1;
-  border-radius: 5px;
 }
