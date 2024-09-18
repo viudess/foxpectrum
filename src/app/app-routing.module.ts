@@ -9,6 +9,7 @@ import { HomeTipicoComponent } from './tipico/home-tipico/home-tipico.component'
 import { AddToDoComponent } from './tipico/organizacao/add-to-do/add-to-do.component';
 import { AddCalendarioComponent } from './tipico/organizacao/add-calendario/add-calendario.component';
 import { ConfigPerfilComponent } from './tipico/personalizacao/config-perfil/config-perfil.component';
+import { CadastroComponent } from './area-cad-log/cadastro/cadastro.component';
 
 const routes: Routes = [
   { path: '', component: HomeTipicoComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'addtodo', component: AddToDoComponent },
   { path: 'addcalendario', component: AddCalendarioComponent },
   { path: 'configperfil', component: ConfigPerfilComponent },
+  { path: 'cadastro', component: CadastroComponent },
 ];
 
 @NgModule({

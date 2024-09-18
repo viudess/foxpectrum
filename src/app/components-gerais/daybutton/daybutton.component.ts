@@ -9,6 +9,10 @@ export class DaybuttonComponent {
   clicado: number | null = null;
 
   mudarCor(index: number) {
-    this.clicado = index;
+    if (this.clicado === index) {
+      this.clicado = null;
+    } else {
+      this.clicado = index;
+    }
   }
 }
