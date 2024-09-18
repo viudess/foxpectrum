@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './daybutton.component.css'
 })
 export class DaybuttonComponent {
-  clicado = [false, false, false, false, false];
+  clicado: number | null = null;
 
   mudarCor(index: number) {
-    this.clicado[index] = !this.clicado[index];
+    this.clicado = index;
   }
 }
