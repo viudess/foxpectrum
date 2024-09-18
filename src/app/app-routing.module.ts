@@ -6,7 +6,9 @@ import { MoodTrackerComponent } from './tipico/mood/mood-tracker/mood-tracker.co
 import { CalendarioToDoComponent } from './tipico/organizacao/calendario-to-do/calendario-to-do.component';
 import { PerfilComponent } from './tipico/personalizacao/perfil/perfil.component';
 import { HomeTipicoComponent } from './tipico/home-tipico/home-tipico.component';
-
+import { AddToDoComponent } from './tipico/organizacao/add-to-do/add-to-do.component';
+import { AddCalendarioComponent } from './tipico/organizacao/add-calendario/add-calendario.component';
+import { ConfigPerfilComponent } from './tipico/personalizacao/config-perfil/config-perfil.component';
 
 const routes: Routes = [
   { path: '', component: HomeTipicoComponent },
@@ -14,6 +16,9 @@ const routes: Routes = [
   { path: 'organizacao', component: CalendarioToDoComponent },
   { path: 'perfil', component: PerfilComponent },
   { path: 'formsmood', component: FormsMoodComponent },
+  { path: 'addtodo', component: AddToDoComponent },
+  { path: 'addcalendario', component: AddCalendarioComponent },
+  { path: 'configperfil', component: ConfigPerfilComponent },
 ];
 
 @NgModule({

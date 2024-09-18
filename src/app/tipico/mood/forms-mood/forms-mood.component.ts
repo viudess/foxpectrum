@@ -26,7 +26,7 @@ export class FormsMoodComponent {
     {title: 'Desanimado', image: 'desanimado 1.png'},
     {title: 'Distraído', image: 'distraído 1.png'},
     {title: 'Confuso', image: 'confuso 1.png'},
-    {title: 'Indiferente', image: 'estou mais ou menos 1.png'},
+    {title: 'Mais ou menos', image: 'estou mais ou menos 1.png'},
     {title: 'Sério', image: 'sério 1.png'},
   ]
 }

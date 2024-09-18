@@ -39,6 +39,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatCardModule } from '@angular/material/card';
 import { EmotionComponent } from './components-gerais/emotion/emotion.component';
+import { DaybuttonComponent } from './components-gerais/daybutton/daybutton.component';
 
 
 
@@ -71,7 +72,8 @@ import { EmotionComponent } from './components-gerais/emotion/emotion.component'
     BannerComponent,
     ToDoComponent,
     CalendarioComponent,
-    EmotionComponent
+    EmotionComponent,
+    DaybuttonComponent
   ],
   imports: [
     BrowserModule,
