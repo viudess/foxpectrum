@@ -45,6 +45,13 @@ input{
   height: 20px;
   border: 2px solid #D6C8E1;
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.radio img{
+  width: 80%;
+  height: 60%;
 }
 .finalizar{
   display: flex;

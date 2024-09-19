@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './to-do.component.css'
 })
 export class ToDoComponent {
+  clicado = false;
 
+  mudarCor(){
+    this.clicado = !this.clicado;
+  }
 }

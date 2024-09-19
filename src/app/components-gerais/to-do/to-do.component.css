@@ -14,11 +14,6 @@ section{
   height: 60px;
   border-radius: 10px;
 }
-input[type="checkbox"]{
-  width: 25px;
-  height: 25px;
-  accent-color: #704D97;
-}
 .tarefa{
   display: flex;
   align-items: center;
@@ -26,4 +21,17 @@ input[type="checkbox"]{
 }
 .tarefa p{
   font-size: 12px;
+}
+.radio{
+  width: 25px;
+  height: 25px;
+  border: 2px solid #704D97;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.radio img{
+  width: 80%;
+  height: 60%;
 }

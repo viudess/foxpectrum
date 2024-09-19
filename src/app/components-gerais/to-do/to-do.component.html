@@ -5,6 +5,9 @@
       <label for="">Tarefa</label>
       <p for="">03:00 PM</p>
     </div>
-    <input type="checkbox">
+    <div class="radio" (click)="mudarCor()"
+      [ngStyle]="{'background-color': clicado ? '#704D97' : ''}">
+      <img src="ok-image.png" alt="">
+    </div>
   </div>
 </section>
