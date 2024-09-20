@@ -1,13 +1,13 @@
 <section>
   <div class="container">
-    <label for="">Hoje</label>
+    <label for="">{{dia}}</label>
     <div class="tarefa">
-      <label for="">Tarefa</label>
-      <p for="">03:00 PM</p>
+      <label for="">{{tarefa}}</label>
+      <p for="">{{horario}}</p>
     </div>
     <div class="radio" (click)="mudarCor()"
       [ngStyle]="{'background-color': clicado ? '#704D97' : ''}">
-      <img src="ok-image.png" alt="">
+      <img src="ok-image.png" alt="" [hidden]="!clicado">
     </div>
   </div>
 </section>

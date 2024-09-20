@@ -5,3 +5,35 @@ mat-icon{
   position: absolute;
   left: 20px;
 }
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input{
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #D9D9D9;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+::placeholder{
+  color: rgb(46, 46, 46);
+}
+.concluir{
+  width: 70%;
+  height: 50px;
+  background-color: #876E9B;
+  border-radius: 10px;
+  color: white;
+  font-size: larger;
+  margin-top: 20px;
+}

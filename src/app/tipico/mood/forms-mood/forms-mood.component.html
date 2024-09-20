@@ -24,14 +24,14 @@
         <div class="gridcheck" (click)="mudarCor(0, 0)">
           <div class="radio"
             [ngStyle]="{'background-color': sobrecarregado === 0 ? '#704D97' : '', 'border': sobrecarregado === 0 ? '1px solid #704D97' : ''}">
-            <img src="ok-image.png" alt="">
+            <img src="ok-image.png" alt="" [hidden]="sobrecarregado !== 0">
           </div>
           <h2>Sim</h2>
         </div>
         <div class="gridcheck" (click)="mudarCor(0, 1)">
           <div class="radio"
             [ngStyle]="{'background-color': sobrecarregado === 1 ? '#704D97' : '', 'border': sobrecarregado === 1 ? '1px solid #704D97' : ''}">
-            <img src="ok-image.png" alt="">
+            <img src="ok-image.png" alt="" [hidden]="sobrecarregado !== 1">
           </div>
           <h2>Não</h2>
         </div>
@@ -41,14 +41,14 @@
         <div class="gridcheck" (click)="mudarCor(1, 0)">
           <div class="radio"
             [ngStyle]="{'background-color': verbal === 0 ? '#704D97' : '', 'border': verbal === 0 ? '1px solid #704D97' : ''}">
-            <img src="ok-image.png" alt="">
+            <img src="ok-image.png" alt="" [hidden]="verbal !== 0">
           </div>
           <h2>Sim</h2>
         </div>
         <div class="gridcheck" (click)="mudarCor(1, 1)">
           <div class="radio"
             [ngStyle]="{'background-color': verbal === 1 ? '#704D97' : '', 'border': verbal === 1 ? '1px solid #704D97' : ''}">
-            <img src="ok-image.png" alt="">
+            <img src="ok-image.png" alt="" [hidden]="verbal !== 1">
           </div>
           <h2>Não</h2>
         </div>
@@ -58,14 +58,14 @@
         <div class="gridcheck" (click)="mudarCor(2, 0)">
           <div class="radio"
             [ngStyle]="{'background-color': contatoFisico === 0 ? '#704D97' : '', 'border': contatoFisico === 0 ? '1px solid #704D97' : ''}">
-            <img src="ok-image.png" alt="">
+            <img src="ok-image.png" alt="" [hidden]="contatoFisico !== 0">
           </div>
           <h2>Sim</h2>
         </div>
         <div class="gridcheck" (click)="mudarCor(2, 1)">
           <div class="radio"
             [ngStyle]="{'background-color': contatoFisico === 1 ? '#704D97' : '', 'border': contatoFisico === 1 ? '1px solid #704D97' : ''}">
-            <img src="ok-image.png" alt="">
+            <img src="ok-image.png" alt="" [hidden]="contatoFisico !== 1">
           </div>
           <h2>Não</h2>
         </div>

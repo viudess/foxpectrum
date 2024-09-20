@@ -30,17 +30,17 @@ export class FormsMoodComponent {
     {title: 'Sério', image: 'sério 1.png'},
   ];
 
-  sobrecarregado: number | null = null; 
+  sobrecarregado: number | null = null;
   verbal: number | null = null;
   contatoFisico: number | null = null;
 
   mudarCor(pergunta: number, valor: number) {
     if (pergunta === 0) {
-      this.sobrecarregado = valor;
+      this.sobrecarregado = this.sobrecarregado === valor ? null : valor;
     } else if (pergunta === 1) {
-      this.verbal = valor;
+      this.verbal = this.verbal === valor ? null : valor;
     } else if (pergunta === 2) {
-      this.contatoFisico = valor;
+      this.contatoFisico = this.contatoFisico === valor ? null : valor;
     }
   }
 }

@@ -6,9 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './to-do.component.css'
 })
 export class ToDoComponent {
-  clicado = false;
+  dia = 'Hoje';
+  tarefa = 'Tarefa';
+  horario = '03:00 pm'
+
+  clicado: boolean = false;
 
   mudarCor(){
     this.clicado = !this.clicado;
   }
+
 }
