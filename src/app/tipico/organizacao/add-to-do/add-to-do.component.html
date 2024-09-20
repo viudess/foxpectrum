@@ -3,18 +3,21 @@
     <h1>Adicionar tarefa</h1>
 </header>
 <main>
-  <input type="text" placeholder="Nome da tarefa">
-  <div>
-    <input type="text" placeholder="Membros">
-  </div>
-  <div>
-    <input type="text" placeholder="Horário">
-  </div>
-  <div>
-    <button>Data</button>
-    <button>Diário</button>
-    <button>Hoje</button>
-  </div>
-  <button class="concluir">Concluir</button>
+  <section>
+    <input type="text" placeholder="Nome da tarefa">
+    <div>
+      <input type="text" placeholder="Membros">
+    </div>
+    <div class="horario">
+      <input type="number" placeholder="Hora">
+      <input type="number" placeholder="Minuto">
+      <button (click)="alternarAmPm()">{{ periodo }}</button>
+    </div>
+    <div class="data">
+      <button (click)="mudarCor(0)" [ngStyle]="{'color': clicado === 0 ? 'white' : '', 'background-color': clicado === 0 ? '#876E9B' : ''}">Hoje</button>
+      <button (click)="mudarCor(1)" [ngStyle]="{'color': clicado === 1 ? 'white' : '', 'background-color': clicado === 1 ? '#876E9B' : ''}">Diário</button>
+      <button (click)="mudarCor(2)" [ngStyle]="{'color': clicado === 2 ? 'white' : '', 'background-color': clicado === 2 ? '#876E9B' : ''}">Data</button>
+    </div>
+    <button class="concluir" routerLink="/organizacao">Concluir</button>
+  </section>
 </main>
-

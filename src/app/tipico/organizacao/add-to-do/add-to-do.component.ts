@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './add-to-do.component.css'
 })
 export class AddToDoComponent {
+  clicado: number | null = 0;
+  periodo: string = 'AM';
+  
+  mudarCor(index: number) {
+    this.clicado = index;
+  }
 
+  alternarAmPm() {
+    this.periodo = this.periodo === 'AM' ? 'PM' : 'AM';
+  }
 }

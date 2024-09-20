@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class ToDoComponent {
   dia = 'Hoje';
   tarefa = 'Tarefa';
-  horario = '03:00 pm'
+  horario = '03:00 pm';
 
   clicado: boolean = false;
 
