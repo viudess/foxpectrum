@@ -40,6 +40,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatCardModule } from '@angular/material/card';
 import { EmotionComponent } from './components-gerais/emotion/emotion.component';
 import { DaybuttonComponent } from './components-gerais/daybutton/daybutton.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -83,7 +84,8 @@ import { DaybuttonComponent } from './components-gerais/daybutton/daybutton.comp
     BrowserAnimationsModule,
     MatNativeDateModule,
     MatDatepickerModule,
-    MatCardModule
+    MatCardModule,
+    FormsModule
   ],
   providers: [
     provideAnimationsAsync()
