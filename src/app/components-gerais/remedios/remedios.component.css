@@ -1,0 +1,20 @@
+.remedio{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: left;
+  padding: 5px;
+  padding-left: 20px;
+}
+.remedio img{
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+.remedio h1{
+  font-size: medium;
+}
+.remedio p{
+  font-size: smaller;
+  color: #818181;
+}

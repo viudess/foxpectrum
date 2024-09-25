@@ -25,4 +25,38 @@
       <img src="perfil.png" alt="">
     </div>
   </div>
+
+  <div class="container-med">
+    <div class="medicamentos">
+      <h1>Medicamentos</h1>
+      <div>
+        <button routerLink="/medficha"><img src="search_note.png" alt=""></button>
+        <button routerLink="/mededitar"><img src="pencil.png" alt=""></button>
+      </div>
+    </div>
+    <div class="container-rem">
+      <div *ngFor="let remedio of medicacoes">
+        <app-remedios
+        [nomeRemedio]="remedio.nomeRemedio"
+        [horario]="remedio.horario"
+        [quantidade]="remedio.quantidade"
+        [vezes]="remedio.vezes">
+      </app-remedios>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-med">
+    <div class="medicamentos">
+      <h1>Wishlist</h1>
+      <div>
+        <button><img src="pencil.png" alt=""></button>
+      </div>
+    </div>
+    <div class="container-rem">
+      <div *ngFor="let wishes of wishlist">
+        <app-wishlist [wish]="wishes.wish"></app-wishlist>
+      </div>
+    </div>
+  </div>
 </main>

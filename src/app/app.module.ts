@@ -41,6 +41,8 @@ import { MatCardModule } from '@angular/material/card';
 import { EmotionComponent } from './components-gerais/emotion/emotion.component';
 import { DaybuttonComponent } from './components-gerais/daybutton/daybutton.component';
 import { FormsModule } from '@angular/forms';
+import { RemediosComponent } from './components-gerais/remedios/remedios.component';
+import { WishlistComponent } from './components-gerais/wishlist/wishlist.component';
 
 
 
@@ -74,7 +76,9 @@ import { FormsModule } from '@angular/forms';
     ToDoComponent,
     CalendarioComponent,
     EmotionComponent,
-    DaybuttonComponent
+    DaybuttonComponent,
+    RemediosComponent,
+    WishlistComponent
   ],
   imports: [
     BrowserModule,

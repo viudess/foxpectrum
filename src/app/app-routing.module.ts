@@ -10,16 +10,24 @@ import { AddToDoComponent } from './tipico/organizacao/add-to-do/add-to-do.compo
 import { AddCalendarioComponent } from './tipico/organizacao/add-calendario/add-calendario.component';
 import { ConfigPerfilComponent } from './tipico/personalizacao/config-perfil/config-perfil.component';
 import { CadastroComponent } from './area-cad-log/cadastro/cadastro.component';
+import { MedFichaComponent } from './tipico/personalizacao/med-ficha/med-ficha.component';
+import { MedEditarComponent } from './tipico/personalizacao/med-editar/med-editar.component';
 
 const routes: Routes = [
   { path: '', component: HomeTipicoComponent },
+
   { path: 'mood', component: MoodTrackerComponent },
-  { path: 'organizacao', component: CalendarioToDoComponent },
-  { path: 'perfil', component: PerfilComponent },
   { path: 'formsmood', component: FormsMoodComponent },
+
+  { path: 'organizacao', component: CalendarioToDoComponent },
   { path: 'addtodo', component: AddToDoComponent },
   { path: 'addcalendario', component: AddCalendarioComponent },
+
+  { path: 'perfil', component: PerfilComponent },
   { path: 'configperfil', component: ConfigPerfilComponent },
+  { path: 'medficha', component: MedFichaComponent },
+  { path: 'mededitar', component: MedEditarComponent },
+
   { path: 'cadastro', component: CadastroComponent },
 ];
 

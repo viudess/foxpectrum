@@ -25,8 +25,14 @@
   font-size: 1rem;
   margin-right: 10px;
   border-radius: 5px;
+  background-color: #F0F0F0;
 }
-
+.calendar-header option{
+  background-color: #D6C8E1;
+}
+.calendar-header option :hover{
+  background-color: #876E9B;
+}
 mat-icon{
   font-size: 20px;
   margin-left: 10px;
