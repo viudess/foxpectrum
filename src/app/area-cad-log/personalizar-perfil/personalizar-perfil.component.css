@@ -13,18 +13,27 @@ body{
   min-height: 600px;
 }
 
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .top{
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 h1{
   font-size: 20px;
+  margin-bottom: 5px;
 }
 
 h2{
   font-size: 15px;
+  margin-bottom: 15px;
 }
 
 
@@ -36,52 +45,21 @@ h2{
 }
 
 
-
-.form-box{
-align-items: center;
-  backdrop-filter: blur(40px);
-  padding: 30px 40px;
-  width: 50%;
-  border-radius: 0 20px 20px 0;
-
-}
-.form-box h2{
-align-items: center;
-  font-size: 30px;
-  font-size: 25px;
-  margin-bottom: 5px;
-}
-.form-box p{
-  color: #555555;
-  font-size: 13px;
-}
-.form-box p a{
-  color: #704D97;
-  text-decoration: none;
-}
-.form-box form{
-  margin: 25px 0;
-}
-form .input-group{
-  margin-bottom: 20px;
-  border-bottom: 3px solid #704D97;
+.input-button{
   display: flex;
-  align-items: center;
-  gap: 15px;
-  padding: 3px;
-  cursor: text;
-}
+  justify-content: center;
+  }
 
-
-
-
-
-.input-button button{
+.input-button{
   width: 191px;
   height: 29px;
   background: #D6C8E1;
-  border-radius: 5px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
   margin-top: 15px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
   font-size: 15px;
 }
 
@@ -91,15 +69,14 @@ form .input-group{
   background-color: #D6C8E1;
   border-radius: 60px;
   font-size: 20px;
+  margin-top: 10px;
 }
 
 input[type="checkbox"] {
   appearance: none;
   position: relative;
-  /* Tamanho */
   width: 1.125rem;
   height: 1.125rem;
-  /* Cor do fundo e borda */
   background-color: #fff;
   border: 0.125rem solid #ccc;
   border-radius: 0.25rem;
@@ -107,20 +84,15 @@ input[type="checkbox"] {
 
 input[type="checkbox"]::before {
   content: "";
-  /* Posicionar no meio */
   position: absolute;
   top: 50%;
   left: 50%;
-  /* Tamanho do marcador */
   width: 0.75rem;
   height: 0.75rem;
-  /* Formato do marcador */
   clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-  /* Posicionar no meio */
   transform: translate(-50%, -50%) scale(0);
   transform-origin: center;
   transition: 0.125s transform ease-in-out;
-  /* Cor do marcador */
   box-shadow: inset 1rem 1rem #fff;
 }
 
@@ -129,22 +101,30 @@ input[type="checkbox"]:checked {
   border-color: #704D97;
 }
 
-/* Características do marcador quando selecionado */
 input[type="checkbox"]:checked::before {
   transform: translate(-50%, -50%) scale(1);
 }
 
 p{
-  font-size: 18px;
+  font-size: 15px;
 }
 
-.input-group input{
-    border: none;
-   background-color: transparent;
-  }
+.form{
+  padding: 35px;
+}
 
+.form .input-botao{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-.input-group{
+.divisor{
+  margin-bottom: 20px;
+}
+
+.form .input-group{
   margin-bottom: 20px;
   border-bottom: 3px solid #704D97;
   display: flex;
@@ -152,6 +132,15 @@ p{
   gap: 15px;
   padding: 3px;
   cursor: text;
+}
+
+.form .input-group input{
+  border: none;
+ background-color: transparent;
+}
+
+.form .input-group input:focus{
+outline: none;
 }
 
 
