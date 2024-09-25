@@ -3,7 +3,7 @@ import { IFamily } from "../family/IFamily";
 
 export interface IUser {
     email: string;
-    family: IFamily;
+    //family: IFamily;
     password: string;
 }
 
