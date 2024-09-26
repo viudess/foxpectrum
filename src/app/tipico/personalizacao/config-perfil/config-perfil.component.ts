@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './config-perfil.component.css'
 })
 export class ConfigPerfilComponent {
-
+  
 }

@@ -106,3 +106,6 @@ main{
   border-end-end-radius: 10px;
   border-end-start-radius: 10px;
 }
+.medicamentos button{
+  height: 24px;
+}

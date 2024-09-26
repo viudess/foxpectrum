@@ -12,6 +12,8 @@ import { ConfigPerfilComponent } from './tipico/personalizacao/config-perfil/con
 import { CadastroComponent } from './area-cad-log/cadastro/cadastro.component';
 import { MedFichaComponent } from './tipico/personalizacao/med-ficha/med-ficha.component';
 import { MedEditarComponent } from './tipico/personalizacao/med-editar/med-editar.component';
+import { WishFichaComponent } from './tipico/personalizacao/wish-ficha/wish-ficha.component';
+import { WishEditarComponent } from './tipico/personalizacao/wish-editar/wish-editar.component';
 
 const routes: Routes = [
   { path: '', component: HomeTipicoComponent },
@@ -27,6 +29,8 @@ const routes: Routes = [
   { path: 'configperfil', component: ConfigPerfilComponent },
   { path: 'medficha', component: MedFichaComponent },
   { path: 'mededitar', component: MedEditarComponent },
+  { path: 'wishficha', component: WishFichaComponent },
+  { path: 'wisheditar', component: WishEditarComponent },
 
   { path: 'cadastro', component: CadastroComponent },
 ];

@@ -18,6 +18,6 @@ export class PerfilComponent {
   wishlist = [
     {wish:'Dinheiro'},
     {wish:'Casa'},
-    {wish:'Carro'},
+    {wish:'Felicidade'},
   ]
 }

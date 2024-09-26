@@ -43,6 +43,9 @@ import { DaybuttonComponent } from './components-gerais/daybutton/daybutton.comp
 import { FormsModule } from '@angular/forms';
 import { RemediosComponent } from './components-gerais/remedios/remedios.component';
 import { WishlistComponent } from './components-gerais/wishlist/wishlist.component';
+import { RadioComponent } from './components-gerais/radio/radio.component';
+import { WishFichaComponent } from './tipico/personalizacao/wish-ficha/wish-ficha.component';
+import { WishEditarComponent } from './tipico/personalizacao/wish-editar/wish-editar.component';
 
 
 
@@ -78,7 +81,10 @@ import { WishlistComponent } from './components-gerais/wishlist/wishlist.compone
     EmotionComponent,
     DaybuttonComponent,
     RemediosComponent,
-    WishlistComponent
+    WishlistComponent,
+    RadioComponent,
+    WishFichaComponent,
+    WishEditarComponent,
   ],
   imports: [
     BrowserModule,

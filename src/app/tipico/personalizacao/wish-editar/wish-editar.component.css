@@ -5,13 +5,6 @@ mat-icon{
   position: absolute;
   left: 20px;
 }
-header{
-  position: relative;
-}
-mat-icon{
-  position: absolute;
-  left: 20px;
-}
 main{
   display: flex;
   justify-content: center;
@@ -42,7 +35,7 @@ input{
 ::placeholder{
   color: rgb(46, 46, 46);
 }
-.concluir, .addhorario{
+.concluir{
   width: 100%;
   height: 50px;
   background-color: #876E9B;
@@ -51,35 +44,6 @@ input{
   font-size: larger;
   margin-bottom: 20px;
   margin-top: 30px;
-}
-.addhorario{
-  margin-top: 0px;
-}
-.data button{
-  width: 100%;
-  height: 50px;
-  border-radius: 10px;
-}
-.horario{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.horario button{
-  width: 100%;
-  height: 50px;
-  border-radius: 10px;
-  background-color: #876E9B;
-  color: white;
-  margin-bottom: 20px;
-  margin-inline: 5px;
-}
-.horario input{
-  text-align: center;
-  padding-right: 10px;
-  margin-inline: 5px;
 }
 .descricao{
   display: flex;
@@ -94,10 +58,4 @@ input{
   height: auto;
   background-color: #F0F0F0;
   padding: 5px;
-}
-.delete button{
-  background-color: #B02828;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
