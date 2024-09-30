@@ -1,3 +1,4 @@
+
 section{
   width: 100%;
   display: flex;
@@ -34,4 +35,15 @@ section{
 .radio img{
   width: 80%;
   height: 60%;
+}
+.buttons{
+  display: flex;
+  flex-direction: row;
+}
+.buttons button{
+  width: 25px;
+  height: 25px;
+  background-color: #B02828;
+  border-radius: 5px;
+  margin-left: 10px;
 }

@@ -1,13 +1,27 @@
 <section>
-  <div class="container">
-    <label for="">{{dia}}</label>
+  <div class="input-container">
+    <input [(ngModel)]="newTask.dia" placeholder="Dia" />
+    <input [(ngModel)]="newTask.tarefa" placeholder="Tarefa" />
+    <input [(ngModel)]="newTask.horario" placeholder="Horário" />
+    <button (click)="addTask()">Adicionar</button>
+  </div>
+
+  <div *ngFor="let task of tasks; let i = index" class="container">
+    <label for="">{{ task.dia }}</label>
+
     <div class="tarefa">
-      <label for="">{{tarefa}}</label>
-      <p for="">{{horario}}</p>
+      <label for="">{{ task.tarefa }}</label>
+      <p for="">{{ task.horario }}</p>
     </div>
-    <div class="radio" (click)="mudarCor()"
-      [ngStyle]="{'background-color': clicado ? '#704D97' : ''}">
-      <img src="ok-image.png" alt="" [hidden]="!clicado">
+    <div class="buttons">
+      <div class="radio" (click)="toggleTaskStatus(i)"
+        [ngStyle]="{'background-color': task.clicado ? '#704D97' : ''}">
+        <img src="ok-image.png" alt="" [hidden]="!task.clicado">
+      </div>
+      <button (click)="deleteTask(i)">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" fill="#FFFF"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+      </button>
     </div>
+
   </div>
 </section>

@@ -6,14 +6,31 @@ import { Component } from '@angular/core';
   styleUrl: './to-do.component.css'
 })
 export class ToDoComponent {
-  dia = 'Hoje';
-  tarefa = 'Tarefa';
-  horario = '03:00 pm';
+  tasks: { dia: string, tarefa: string, horario: string, clicado: boolean }[] = [];
+  newTask = {
+    dia: '',
+    tarefa: '',
+    horario: ''
+  };
 
-  clicado: boolean = false;
+  addTask() {
+    if (this.newTask.dia.trim() && this.newTask.tarefa.trim() && this.newTask.horario.trim()) {
+      this.tasks.push({
+        dia: this.newTask.dia,
+        tarefa: this.newTask.tarefa,
+        horario: this.newTask.horario,
+        clicado: false
+      });
+      this.newTask = { dia: '', tarefa: '', horario: '' };
+    }
+  }
 
-  mudarCor(){
-    this.clicado = !this.clicado;
+  deleteTask(index: number) {
+    this.tasks.splice(index, 1);
+  }
+
+  toggleTaskStatus(index: number) {
+    this.tasks[index].clicado = !this.tasks[index].clicado;
   }
 
 }

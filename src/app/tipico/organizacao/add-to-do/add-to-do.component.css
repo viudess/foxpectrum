@@ -9,6 +9,7 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 section{
   display: flex;
@@ -78,4 +79,53 @@ input{
   text-align: center;
   padding-right: 10px;
   margin-inline: 5px;
+}
+
+section{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container{
+  margin: 5px;
+  background-color: #D9D9D9;
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  border-radius: 10px;
+}
+.tarefa{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.tarefa p{
+  font-size: 12px;
+}
+.radio{
+  width: 25px;
+  height: 25px;
+  border: 2px solid #704D97;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.radio img{
+  width: 80%;
+  height: 60%;
+}
+.buttons{
+  display: flex;
+  flex-direction: row;
+}
+.buttons button{
+  width: 25px;
+  height: 25px;
+  background-color: #B02828;
+  border-radius: 5px;
+  margin-left: 10px;
 }
