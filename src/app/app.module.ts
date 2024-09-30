@@ -46,6 +46,8 @@ import { WishlistComponent } from './components-gerais/wishlist/wishlist.compone
 import { RadioComponent } from './components-gerais/radio/radio.component';
 import { WishFichaComponent } from './tipico/personalizacao/wish-ficha/wish-ficha.component';
 import { WishEditarComponent } from './tipico/personalizacao/wish-editar/wish-editar.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -95,7 +97,8 @@ import { WishEditarComponent } from './tipico/personalizacao/wish-editar/wish-ed
     MatNativeDateModule,
     MatDatepickerModule,
     MatCardModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     provideAnimationsAsync()
