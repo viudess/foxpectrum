@@ -1,51 +1,20 @@
 <header>
-    <mat-icon routerLink="/organizacao">arrow_back_ios</mat-icon>
-    <h1>Adicionar tarefa</h1>
+  <mat-icon routerLink="/organizacao">arrow_back_ios</mat-icon>
+  <h1>Adicionar tarefa</h1>
 </header>
 <main>
-  <section>
-    <input type="text" [(ngModel)]="newTask.tarefa" placeholder="Nome da tarefa">
-    <div>
-      <input type="text" [(ngModel)]="newTask.membros" placeholder="Membros">
-    </div>
-    <div class="horario">
-      <input type="number" [(ngModel)]="newTask.hora" placeholder="Hora">
-      <input type="number" [(ngModel)]="newTask.minuto" placeholder="Minuto">
-      <button (click)="alternarAmPm()">{{ newTask.periodo }}</button>
-    </div>
-    <div class="data">
-      <button (click)="mudarCor(0)"
-              [ngStyle]="{'color': newTask.dataSelecionada === 0 ? 'white' : '', 'background-color': newTask.dataSelecionada === 0 ? '#876E9B' : ''}">
-        Hoje
-      </button>
-      <button (click)="mudarCor(1)"
-              [ngStyle]="{'color': newTask.dataSelecionada === 1 ? 'white' : '', 'background-color': newTask.dataSelecionada === 1 ? '#876E9B' : ''}">
-        Diário
-      </button>
-      <button (click)="mudarCor(2)"
-              [ngStyle]="{'color': newTask.dataSelecionada === 2 ? 'white' : '', 'background-color': newTask.dataSelecionada === 2 ? '#876E9B' : ''}">
-        Data
-      </button>
-    </div>
-    <button class="concluir" (click)="addTask()">Concluir</button>
-  </section>
-
-  <section *ngIf="tasks.length > 0">
-    <h2>Lista de Tarefas</h2>
-    <div *ngFor="let task of tasks; let i = index" class="container">
-      <p>{{ task.data }}</p>
-      <div class="flex-col">
-        <label for="">{{ task.tarefa }}</label>
-        <p>{{ task.horario }}</p>
-      </div>
-      <div class="radio" (click)="toggleTaskStatus(i)"
-           [ngStyle]="{'background-color': task.clicado ? '#704D97' : ''}">
-        <img src="ok-image.png" alt="" [hidden]="!task.clicado">
-      </div>
-      <button (click)="deleteTask(i)">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" fill="#FFFF"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
-      </button>
-    </div>
-  </section>
+<section>
+  <input type="text" placeholder="Nome da tarefa">
+  <div class="horario">
+    <input type="number" placeholder="Hora">
+    <input type="number" placeholder="Minuto">
+    <button (click)="alternarAmPm()">{{ periodo }}</button>
+  </div>
+  <div class="data">
+    <button (click)="mudarCor(0)" [ngStyle]="{'color': clicado === 0 ? 'white' : '', 'background-color': clicado === 0 ? '#876E9B' : ''}">Hoje</button>
+    <button (click)="mudarCor(1)" [ngStyle]="{'color': clicado === 1 ? 'white' : '', 'background-color': clicado === 1 ? '#876E9B' : ''}">Diário</button>
+    <button (click)="mudarCor(2)" [ngStyle]="{'color': clicado === 2 ? 'white' : '', 'background-color': clicado === 2 ? '#876E9B' : ''}">Data</button>
+  </div>
+  <button class="concluir" routerLink="/organizacao">Concluir</button>
+</section>
 </main>
-

@@ -12,5 +12,8 @@
     <h1>Adicionar tafera (To-do)</h1>
     <mat-icon>add_circle</mat-icon>
   </button>
-  <app-to-do></app-to-do>
+  <div>
+    <h1>Tarefas</h1>
+    <app-to-do *ngFor="let tarefa of tarefas" [tarefa]="tarefa" (onDeleteTask)="deleteTask($event)"></app-to-do>
+  </div>
 </main>

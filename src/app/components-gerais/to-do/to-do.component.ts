@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Tarefa } from '../../Tarefa';
 
 @Component({
   selector: 'app-to-do',
@@ -6,31 +7,16 @@ import { Component } from '@angular/core';
   styleUrl: './to-do.component.css'
 })
 export class ToDoComponent {
-  tasks: { dia: string, tarefa: string, horario: string, clicado: boolean }[] = [];
-  newTask = {
-    dia: '',
-    tarefa: '',
-    horario: ''
-  };
+  clicado: boolean = false;
 
-  addTask() {
-    if (this.newTask.dia.trim() && this.newTask.tarefa.trim() && this.newTask.horario.trim()) {
-      this.tasks.push({
-        dia: this.newTask.dia,
-        tarefa: this.newTask.tarefa,
-        horario: this.newTask.horario,
-        clicado: false
-      });
-      this.newTask = { dia: '', tarefa: '', horario: '' };
-    }
+  mudarCor(){
+    this.clicado = !this.clicado;
   }
 
-  deleteTask(index: number) {
-    this.tasks.splice(index, 1);
-  }
+  @Input() tarefa!:Tarefa;
+  @Output() onDeleteTask = new EventEmitter<Tarefa>();
 
-  toggleTaskStatus(index: number) {
-    this.tasks[index].clicado = !this.tasks[index].clicado;
+  onDelete(tarefa: Tarefa){
+    this.onDeleteTask.emit(tarefa)
   }
-
 }

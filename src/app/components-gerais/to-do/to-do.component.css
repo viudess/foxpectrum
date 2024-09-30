@@ -1,4 +1,3 @@
-
 section{
   width: 100%;
   display: flex;
@@ -36,14 +35,21 @@ section{
   width: 80%;
   height: 60%;
 }
-.buttons{
+.botoes{
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
-.buttons button{
+button{
+  background-color: #B02828;
   width: 25px;
   height: 25px;
-  background-color: #B02828;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: 10px;
+}
+svg{
+  width: 25px;
 }

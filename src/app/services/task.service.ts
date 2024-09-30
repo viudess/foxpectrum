@@ -1,0 +1,23 @@
+import { Tarefa } from '../Tarefa';
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class TaskService {
+
+  private apiURL = 'http://localhost:3000/tasks';
+
+  constructor(private http: HttpClient) { }
+
+  getTasks() : Observable<Tarefa[]>{
+    return this.http.get<Tarefa[]>(this.apiURL)
+  }
+
+
+  deleteTask(tarefa : Tarefa) : Observable<Tarefa>{
+    return this.http.delete<Tarefa>(`${this.apiURL}/${tarefa.id}`)
+  }
+}

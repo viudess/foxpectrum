@@ -46,7 +46,8 @@ import { WishlistComponent } from './components-gerais/wishlist/wishlist.compone
 import { RadioComponent } from './components-gerais/radio/radio.component';
 import { WishFichaComponent } from './tipico/personalizacao/wish-ficha/wish-ficha.component';
 import { WishEditarComponent } from './tipico/personalizacao/wish-editar/wish-editar.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, provideHttpClient } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -98,10 +99,12 @@ import { HttpClientModule } from '@angular/common/http';
     MatDatepickerModule,
     MatCardModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonModule
   ],
   providers: [
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    provideHttpClient()
   ],
   bootstrap: [AppComponent]
 })

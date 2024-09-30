@@ -7,7 +7,7 @@ form{
   margin-top: 15px;
   width: 100%;
 }
-form h1{
+form h1, div h1{
   text-align: center;
   font-weight: bold;
 }
@@ -34,4 +34,8 @@ form h1{
 }
 mat-icon{
   overflow: visible;
+}
+div{
+  width: 100%;
+  margin-top: 20px;
 }
