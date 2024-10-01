@@ -1,8 +1,21 @@
 # Foxpectrum
 
+Aplicativo de organização familiar com foco em ajudar neurodivergentes
+
+## Integrantes
+
+Eduardo Viudes Chorro
+Júlia Leal Benevides Gomes
+Pedro Araújo dos Santos
+Yannie Yshin Kang
+Ana Clara de Oliveira Nascimento
+Laura Pinheiro Kalybatas
+
+## Generated
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
 
-## Development server
+## Development server // Como abrir o projeto
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
