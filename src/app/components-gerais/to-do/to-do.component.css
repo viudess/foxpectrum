@@ -14,6 +14,9 @@ section{
   height: 60px;
   border-radius: 10px;
 }
+.container.reminder{
+  background-color: #D6C8E1;
+}
 .tarefa{
   display: flex;
   align-items: center;
@@ -31,6 +34,9 @@ section{
   justify-content: center;
   align-items: center;
 }
+.radio.reminder{
+  background-color: #704D97;
+}
 .radio img{
   width: 80%;
   height: 60%;
@@ -45,11 +51,12 @@ button{
   width: 25px;
   height: 25px;
   border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-left: 10px;
 }
-svg{
-  width: 25px;
+mat-icon{
+  color: white;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

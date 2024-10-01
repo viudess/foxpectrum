@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, output, Output } from '@angular/core';
 import { Tarefa } from '../../Tarefa';
 
 @Component({
@@ -7,16 +7,16 @@ import { Tarefa } from '../../Tarefa';
   styleUrl: './to-do.component.css'
 })
 export class ToDoComponent {
-  clicado: boolean = false;
-
-  mudarCor(){
-    this.clicado = !this.clicado;
-  }
 
   @Input() tarefa!:Tarefa;
   @Output() onDeleteTask = new EventEmitter<Tarefa>();
+  @Output() onToggleConcluido = new EventEmitter<Tarefa>();
 
   onDelete(tarefa: Tarefa){
-    this.onDeleteTask.emit(tarefa)
+    this.onDeleteTask.emit(tarefa);
+  }
+
+  onToggle(tarefa: Tarefa){
+    this.onToggleConcluido.emit(tarefa);
   }
 }
