@@ -48,6 +48,7 @@ import { WishFichaComponent } from './tipico/personalizacao/wish-ficha/wish-fich
 import { WishEditarComponent } from './tipico/personalizacao/wish-editar/wish-editar.component';
 import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { RemediosListComponent } from './components-gerais/remedios-list/remedios-list.component';
 
 
 
@@ -88,6 +89,7 @@ import { CommonModule } from '@angular/common';
     RadioComponent,
     WishFichaComponent,
     WishEditarComponent,
+    RemediosListComponent,
   ],
   imports: [
     BrowserModule,

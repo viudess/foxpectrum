@@ -34,13 +34,8 @@
       </div>
     </div>
     <div class="container-rem">
-      <div *ngFor="let remedio of medicacoes">
-        <app-remedios
-        [nomeRemedio]="remedio.nomeRemedio"
-        [horario]="remedio.horario"
-        [quantidade]="remedio.quantidade"
-        [vezes]="remedio.vezes">
-      </app-remedios>
+      <div class="rem">
+        <app-remedios-list></app-remedios-list>
       </div>
     </div>
   </div>
