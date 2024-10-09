@@ -49,6 +49,7 @@ import { WishEditarComponent } from './tipico/personalizacao/wish-editar/wish-ed
 import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { RemediosListComponent } from './components-gerais/remedios-list/remedios-list.component';
+import { BegginMoodComponent } from './tipico/mood/beggin-mood/beggin-mood.component';
 
 
 
@@ -90,6 +91,7 @@ import { RemediosListComponent } from './components-gerais/remedios-list/remedio
     WishFichaComponent,
     WishEditarComponent,
     RemediosListComponent,
+    BegginMoodComponent,
   ],
   imports: [
     BrowserModule,
