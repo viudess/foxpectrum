@@ -1,46 +1,57 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Offside', sans-serif;
-}
-
-body{
+header{
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding-top: 50px;
-  margin-bottom: -65px;
-  min-height: 600px;
+  margin-top: 50px
 }
 
 h1{
   font-size: 20px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 25px;
 }
 
-.divisor {
-  font-size: 20px;
+main{
   display: flex;
-  flex-direction: column;
   justify-content: center;
-
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+section{
+  width: 80%;
+  margin-bottom: 55%;
+}
+section div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+img{
+  width: 24px;
+  height: 24px;
 }
 
-.divisor p{
-  margin-bottom: 10px;
+
+.botao button{
+  width: 271px;
+  height: 48px;
+  background: #D6C8E1;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  margin-top: 15px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 20px;
 }
 
-.divisor ul{
-  margin-bottom: 10px;
-}
+
 input[type="checkbox"] {
   appearance: none;
   position: relative;
-  width: 1.125rem;
-  height: 1.125rem;
+  width: 25px;
+  height: 25px;
   background-color: #fff;
   border: 0.125rem solid #ccc;
   border-radius: 0.25rem;
@@ -51,8 +62,8 @@ input[type="checkbox"]::before {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 0.75rem;
-  height: 0.75rem;
+  width: 15px;
+  height: 15px;
   clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
   transform: translate(-50%, -50%) scale(0);
   transform-origin: center;
@@ -68,7 +79,6 @@ input[type="checkbox"]:checked {
 input[type="checkbox"]:checked::before {
   transform: translate(-50%, -50%) scale(1);
 }
-
 
 
 

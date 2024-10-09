@@ -20,12 +20,20 @@ body{
   flex-direction: column;
 }
 
-.checkbox{
+.checkbox div{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+h2{
   font-size: 15px;
+  margin-left: 5px;
 }
 
 .input-botao{
-  padding-top:275px;
+  padding-top: 85%;
 }
 
 
@@ -36,7 +44,6 @@ body{
   border-radius: 3px;
   outline: none;
   border: none;
-  margin-top: 15px;
   color: rgb(0, 0, 0);
   cursor: pointer;
   font-size: 15px;
@@ -48,14 +55,13 @@ body{
   background-color: #D6C8E1;
   border-radius: 60px;
   font-size: 20px;
-  margin-top: 10px;
 }
 
 input[type="checkbox"] {
   appearance: none;
   position: relative;
-  width: 1.125rem;
-  height: 1.125rem;
+  width: 25px;
+  height: 25px;
   background-color: #fff;
   border: 0.125rem solid #ccc;
   border-radius: 0.25rem;
@@ -66,8 +72,8 @@ input[type="checkbox"]::before {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 0.75rem;
-  height: 0.75rem;
+  width: 15px;
+  height: 15px;
   clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
   transform: translate(-50%, -50%) scale(0);
   transform-origin: center;
@@ -85,8 +91,8 @@ input[type="checkbox"]:checked::before {
 }
 
 p{
-  font-size: 15px;
-  margin-bottom: 5px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 
