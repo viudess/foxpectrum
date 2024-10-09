@@ -1,3 +1,4 @@
+import { BegginMoodComponent } from './tipico/mood/beggin-mood/beggin-mood.component';
 import { FormsMoodComponent } from './tipico/mood/forms-mood/forms-mood.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -18,7 +19,8 @@ import { WishEditarComponent } from './tipico/personalizacao/wish-editar/wish-ed
 const routes: Routes = [
   { path: '', component: HomeTipicoComponent },
 
-  { path: 'mood', component: MoodTrackerComponent },
+  { path: 'mood', component: BegginMoodComponent },
+  { path: 'quest-mood', component: MoodTrackerComponent },
   { path: 'formsmood', component: FormsMoodComponent },
 
   { path: 'organizacao', component: CalendarioToDoComponent },

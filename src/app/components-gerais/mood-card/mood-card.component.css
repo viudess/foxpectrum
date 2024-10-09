@@ -1,0 +1,10 @@
+.mood{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  background-color: #D6C8E1;
+  width: 90%;
+}

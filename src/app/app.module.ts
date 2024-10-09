@@ -50,6 +50,7 @@ import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { RemediosListComponent } from './components-gerais/remedios-list/remedios-list.component';
 import { BegginMoodComponent } from './tipico/mood/beggin-mood/beggin-mood.component';
+import { MoodCardComponent } from './components-gerais/mood-card/mood-card.component';
 
 
 
@@ -92,6 +93,7 @@ import { BegginMoodComponent } from './tipico/mood/beggin-mood/beggin-mood.compo
     WishEditarComponent,
     RemediosListComponent,
     BegginMoodComponent,
+    MoodCardComponent,
   ],
   imports: [
     BrowserModule,
