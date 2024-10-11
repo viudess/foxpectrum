@@ -1,0 +1,19 @@
+.evento{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: left;
+  padding: 5px;
+}
+.evento img{
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+.evento h1{
+  font-size: medium;
+}
+.evento p{
+  font-size: smaller;
+  color: #818181;
+}

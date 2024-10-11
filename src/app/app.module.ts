@@ -51,6 +51,9 @@ import { CommonModule } from '@angular/common';
 import { RemediosListComponent } from './components-gerais/remedios-list/remedios-list.component';
 import { BegginMoodComponent } from './tipico/mood/beggin-mood/beggin-mood.component';
 import { MoodCardComponent } from './components-gerais/mood-card/mood-card.component';
+import { AddMoodComponent } from './components-gerais/add-mood/add-mood.component';
+import { EventosComponent } from './components-gerais/eventos/eventos.component';
+import { EventosListComponent } from './components-gerais/eventos-list/eventos-list.component';
 
 
 
@@ -94,6 +97,9 @@ import { MoodCardComponent } from './components-gerais/mood-card/mood-card.compo
     RemediosListComponent,
     BegginMoodComponent,
     MoodCardComponent,
+    AddMoodComponent,
+    EventosComponent,
+    EventosListComponent,
   ],
   imports: [
     BrowserModule,

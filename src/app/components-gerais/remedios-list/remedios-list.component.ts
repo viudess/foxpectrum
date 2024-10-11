@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class RemediosListComponent {
   medicacoes = [
-    {nomeRemedio: 'Rivotril', horario: '20:00', quantidade:'10ML', vezes:'1x por dia'},
-    {nomeRemedio: 'Atroveran', horario: '20:00 - 21:00 - 22:00', quantidade:'50ML', vezes:'3x por dia'},
+    {nomeRemedio: 'Remédio', horario: '20:00', quantidade:'10ML', vezes:'1x por dia'},
+    {nomeRemedio: 'Remédio', horario: '20:00', quantidade:'10ML', vezes:'1x por dia'},
   ];
 }
