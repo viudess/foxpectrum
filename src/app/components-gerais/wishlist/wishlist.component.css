@@ -6,10 +6,12 @@
   padding: 5px;
   padding-left: 20px;
 }
-.wishes img{
+.bola{
+  background-color: #876E9B;
   width: 10px;
   height: 10px;
   margin-right: 10px;
+  border-radius: 100%;
 }
 .wishes h1{
   font-size: medium;

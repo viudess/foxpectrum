@@ -5,10 +5,12 @@
   justify-content: left;
   padding: 5px;
 }
-.evento img{
+.bola{
+  background-color: #D6C8E1;
   width: 10px;
   height: 10px;
   margin-right: 10px;
+  border-radius: 100%;
 }
 .evento h1{
   font-size: medium;

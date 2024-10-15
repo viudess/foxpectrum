@@ -15,6 +15,12 @@ import { MedFichaComponent } from './tipico/personalizacao/med-ficha/med-ficha.c
 import { MedEditarComponent } from './tipico/personalizacao/med-editar/med-editar.component';
 import { WishFichaComponent } from './tipico/personalizacao/wish-ficha/wish-ficha.component';
 import { WishEditarComponent } from './tipico/personalizacao/wish-editar/wish-editar.component';
+import { LoginComponent } from './area-cad-log/login/login.component';
+import { UsoAppComponent } from './area-cad-log/uso-app/uso-app.component';
+import { PersonalizarPerfilComponent } from './area-cad-log/personalizar-perfil/personalizar-perfil.component';
+import { PersonalizarPerfilDivergenteComponent } from './area-cad-log/personalizar-perfil-divergente/personalizar-perfil-divergente.component';
+import { AcessibilidadeComponent } from './area-cad-log/acessibilidade/acessibilidade.component';
+import { EntrarFamComponent } from './area-cad-log/entrar-fam/entrar-fam.component';
 
 const routes: Routes = [
   { path: '', component: HomeTipicoComponent },
@@ -35,6 +41,12 @@ const routes: Routes = [
   { path: 'wisheditar', component: WishEditarComponent },
 
   { path: 'cadastro', component: CadastroComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'usoapp', component: UsoAppComponent },
+  { path: 'per-perfil', component: PersonalizarPerfilComponent },
+  { path: 'per-perfil-diver', component: PersonalizarPerfilDivergenteComponent },
+  { path: 'acess', component: AcessibilidadeComponent },
+  { path: 'entrar-fam', component: EntrarFamComponent },
 ];
 
 @NgModule({
