@@ -31,6 +31,7 @@ import { BannerComponent } from './components-gerais/banner/banner.component';
 
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatIconModule } from '@angular/material/icon';
+import { PersonalizarPerfilProfComponent } from './area-cad-log/personalizar-perfil-prof/personalizar-perfil-prof.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { MatIconModule } from '@angular/material/icon';
     MedFichaComponent,
     NavbarComponent,
     BotaoDeCriseComponent,
-    BannerComponent
+    BannerComponent,
+    PersonalizarPerfilProfComponent
   ],
   imports: [
     BrowserModule,
